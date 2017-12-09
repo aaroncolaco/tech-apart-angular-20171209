@@ -9,7 +9,7 @@
   </div>
 
   <div class="trips-list">
-    <div class="trip">
+    <div class="trip" *ngFor="let trip of trips">
       <div class="row">
         <div class="col-lg-2 col-md-3 col-sm-4 trip-image-container">
           <img src={{trip.imageUrl}} class="trip-image">
