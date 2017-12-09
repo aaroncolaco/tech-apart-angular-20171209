@@ -12,18 +12,18 @@
     <div class="trip">
       <div class="row">
         <div class="col-lg-2 col-md-3 col-sm-4 trip-image-container">
-          <img src={{imageUrl}} class="trip-image">
+          <img src={{trip.imageUrl}} class="trip-image">
         </div>
         <div class="col-lg-10 col-md-9 col-sm-8 trip-info">
           <div>
-            <div class="trip-name">{{name}}</div>
-            <div class="trip-price">{{cost}}</div>
+            <div class="trip-name">{{trip.name}}</div>
+            <div class="trip-price">{{trip.cost}}</div>
           </div>
-          <div class="trip-duration">{{duration}}</div>
+          <div class="trip-duration">{{trip.duration}}</div>
 
           <div class="row trip-description-container">
             <div class="col-md-8 trip-description">
-              {{description}}
+              {{trip.description}}
             </div>
             <div class="col-md-4">
               <button class="btn btn-lg book-btn">Book Trip</button>
