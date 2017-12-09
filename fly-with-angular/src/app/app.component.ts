@@ -8,6 +8,8 @@ import { Trip } from './models/trip';
 })
 export class AppComponent {
   trips: Trip[];
+  showTripForm: boolean;
+
   constructor() { }
 
   ngOnInit() {
@@ -27,6 +29,12 @@ export class AppComponent {
         imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Planets2013.svg/2000px-Planets2013.svg.png'
       }
     ];
+
+    this.showTripForm = false;
+  }
+
+  toggleAddTrip() {
+    this.showTripForm = !this.showTripForm;
   }
 }
 
