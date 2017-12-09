@@ -21,7 +21,7 @@
         <div class="col-lg-10 col-md-9 col-sm-8 trip-info">
           <div>
             <div class="trip-name">{{trip.name}}</div>
-            <div class="trip-price">{{trip.cost}}</div>
+            <div class="trip-price">{{trip.cost | currency: 'INR' }}</div>
           </div>
           <div class="trip-duration">{{trip.duration}}</div>
 
