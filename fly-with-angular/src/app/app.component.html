@@ -8,6 +8,10 @@
     <!-- <button class="btn add-trip-btn">+ Add a Trip</button> -->
   </div>
 
+  <h2 class="empty-list" *ngIf="trips.length === 0">
+    No trips available
+  </h2>
+
   <div class="trips-list">
     <div class="trip" *ngFor="let trip of trips">
       <div class="row">
